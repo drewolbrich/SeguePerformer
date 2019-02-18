@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bZH-Xl-pZK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jpn-vK-xgj">
+            <objects>
+                <navigationController id="bZH-Xl-pZK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YkF-ZY-sl4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="s9o-FP-rV4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWP-r3-Xrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818" y="133"/>
+        </scene>
+        <!--Example-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SeguePerformerViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGx-t9-QgN">
+                                <rect key="frame" x="82" y="128" width="211" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="First Segue (Programmatic)"/>
+                                <connections>
+                                    <action selector="performFirstSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8b5-vw-Gc0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7R-yM-ppU">
+                                <rect key="frame" x="69.5" y="209" width="236" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Second Segue (Programmatic)"/>
+                                <connections>
+                                    <action selector="performSecondSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVW-Mh-vd4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Va-V6-G5R">
+                                <rect key="frame" x="92.5" y="290" width="190" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Third Segue (Interactive)"/>
+                                <connections>
+                                    <segue destination="gLu-zq-zUy" kind="show" identifier="thirdSegue" id="b7F-B5-zij"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-Aw-o5W">
+                                <rect key="frame" x="87" y="371" width="201" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Fourth Segue (Interactive)"/>
+                                <connections>
+                                    <segue destination="gLu-zq-zUy" kind="show" identifier="fourthSegue" id="Msm-RE-Ba4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g7R-yM-ppU" firstAttribute="top" secondItem="UGx-t9-QgN" secondAttribute="bottom" constant="48" id="5UX-qC-X2c"/>
+                            <constraint firstItem="UGx-t9-QgN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="BOs-xG-zsb"/>
+                            <constraint firstItem="lWo-Aw-o5W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JGn-Pv-JDm"/>
+                            <constraint firstItem="g7R-yM-ppU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ovx-7T-NTW"/>
+                            <constraint firstItem="lWo-Aw-o5W" firstAttribute="top" secondItem="7Va-V6-G5R" secondAttribute="bottom" constant="48" id="WV4-HS-w39"/>
+                            <constraint firstItem="UGx-t9-QgN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZGD-yy-rDu"/>
+                            <constraint firstItem="7Va-V6-G5R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a5k-Vp-5cc"/>
+                            <constraint firstItem="7Va-V6-G5R" firstAttribute="top" secondItem="g7R-yM-ppU" secondAttribute="bottom" constant="48" id="muF-gK-AJq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Example" id="GgO-ES-kRv"/>
+                    <connections>
+                        <outlet property="firstProgrammaticSegueButton" destination="UGx-t9-QgN" id="F0X-DT-gAa"/>
+                        <outlet property="secondProgrammaticSegueButton" destination="g7R-yM-ppU" id="NgI-c1-kOe"/>
+                        <segue destination="0yT-jO-2zV" kind="show" identifier="programmaticSegue" id="EMa-dv-qE4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="133"/>
+        </scene>
+        <!--Programmatic-->
+        <scene sceneID="H1t-py-7jW">
+            <objects>
+                <viewController id="0yT-jO-2zV" customClass="ProgrammaticViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nKu-dh-3d2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view controller was presented programmatically via a manual segue." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-nj-Z2Y">
+                                <rect key="frame" x="57.5" y="128" width="260" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="mlF-24-lkF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcv-7v-V4z">
+                                <rect key="frame" x="162" y="269" width="51" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;segueNameLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jw-Hy-4jV">
+                                <rect key="frame" x="47.5" y="297.5" width="280.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hcv-7v-V4z" firstAttribute="top" secondItem="d0g-nj-Z2Y" secondAttribute="bottom" constant="80" id="KL8-WA-8pO"/>
+                            <constraint firstItem="d0g-nj-Z2Y" firstAttribute="top" secondItem="xFp-n8-tUY" secondAttribute="top" constant="64" id="Nxy-6q-TA2"/>
+                            <constraint firstItem="2jw-Hy-4jV" firstAttribute="centerX" secondItem="xFp-n8-tUY" secondAttribute="centerX" id="QOh-eF-Dlv"/>
+                            <constraint firstItem="2jw-Hy-4jV" firstAttribute="top" secondItem="hcv-7v-V4z" secondAttribute="bottom" constant="8" symbolic="YES" id="bRv-Ly-jx6"/>
+                            <constraint firstItem="d0g-nj-Z2Y" firstAttribute="centerX" secondItem="xFp-n8-tUY" secondAttribute="centerX" id="swT-th-cIn"/>
+                            <constraint firstItem="hcv-7v-V4z" firstAttribute="centerX" secondItem="xFp-n8-tUY" secondAttribute="centerX" id="w4B-9T-QbG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xFp-n8-tUY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Programmatic" id="KrY-u9-BZs"/>
+                    <connections>
+                        <outlet property="segueNameLabel" destination="2jw-Hy-4jV" id="DlK-gX-JIH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODj-vp-nrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="-195"/>
+        </scene>
+        <!--Interactive-->
+        <scene sceneID="S68-K8-Vem">
+            <objects>
+                <viewController id="gLu-zq-zUy" customClass="InteractiveViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2TP-yo-UH2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view controller was presented interactively via an action segue created in Interface Builder." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-pD-ERh">
+                                <rect key="frame" x="52.5" y="128" width="270" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="6Fp-Bc-RxG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIB-2L-Qtd">
+                                <rect key="frame" x="162" y="269" width="51" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;segueNameLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCj-xy-wyX">
+                                <rect key="frame" x="47.5" y="297.5" width="280.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GCj-xy-wyX" firstAttribute="top" secondItem="hIB-2L-Qtd" secondAttribute="bottom" constant="8" symbolic="YES" id="Drg-4u-ifQ"/>
+                            <constraint firstItem="GCj-xy-wyX" firstAttribute="centerX" secondItem="jyV-ab-Os2" secondAttribute="centerX" id="XpX-uX-aGz"/>
+                            <constraint firstItem="hIB-2L-Qtd" firstAttribute="centerX" secondItem="jyV-ab-Os2" secondAttribute="centerX" id="iHv-oh-8kc"/>
+                            <constraint firstItem="ddd-pD-ERh" firstAttribute="top" secondItem="jyV-ab-Os2" secondAttribute="top" constant="64" id="nd0-mu-bPZ"/>
+                            <constraint firstItem="hIB-2L-Qtd" firstAttribute="top" secondItem="ddd-pD-ERh" secondAttribute="bottom" constant="80" id="q7i-ht-5IZ"/>
+                            <constraint firstItem="ddd-pD-ERh" firstAttribute="centerX" secondItem="jyV-ab-Os2" secondAttribute="centerX" id="rbd-Sg-96H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jyV-ab-Os2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interactive" id="8M9-oP-bau"/>
+                    <connections>
+                        <outlet property="segueNameLabel" destination="GCj-xy-wyX" id="kld-Ou-X0M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27Y-cp-IID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="493"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Msm-RE-Ba4"/>
+    </inferredMetricsTieBreakers>
+</document>

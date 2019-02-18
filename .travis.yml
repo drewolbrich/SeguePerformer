@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10.1
+xcode_project: SeguePerformer.xcodeproj
+xcode_scheme: SeguePerformer
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
