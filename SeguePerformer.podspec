@@ -15,7 +15,7 @@ configuration of the new view controller via a trailing closure parameter.
 
   s.homepage         = 'https://github.com/drewolbrich/SeguePerformer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'drewolbrich' => 'drew.olbrich@gmail.com' }
+  s.author           = { 'drewolbrich' => 'drew@retroactivefiasco.com' }
   s.source           = { :git => 'https://github.com/drewolbrich/SeguePerformer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/drewolbrich'
 
