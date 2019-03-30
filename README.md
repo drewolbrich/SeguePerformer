@@ -2,7 +2,7 @@
 
 [![Travis](https://img.shields.io/travis/drewolbrich/SeguePerformer.svg)](https://travis-ci.org/drewolbrich/SeguePerformer)
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgray.svg)](http://developer.apple.com/ios)
-[![Swift 4.2](https://img.shields.io/badge/swift-4.2-red.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift 5](https://img.shields.io/badge/swift-5-red.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/github/license/drewolbrich/SeguePerformer.svg)](LICENSE)
 [![Twitter](https://img.shields.io/badge/twitter-@drewolbrich-blue.svg)](http://twitter.com/drewolbrich)
 
